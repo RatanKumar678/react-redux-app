@@ -1,0 +1,232 @@
+.header-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.main-section {
+    padding-bottom: 20px;
+}
+
+.product-dis {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-dis-key{
+    text-transform: uppercase;
+}
+
+.sold-out-wrapper {
+    position: relative;
+}
+
+.sold-out-wrapper::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .3;
+    align-items: center;
+    z-index: 1;
+    display: inline-flex;
+    justify-content: center;
+    content: 'Sold out';
+    color: #fff;
+    font-size: 40px;
+}
+
+.cart-item-title{
+    font-size: 14px;
+    line-height: 1rem;
+}
+
+.price-section {
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.product-dis-price {
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.product-dis-total {
+    align-items: center;
+    display: flex;
+}
+
+.product-dis-total button{
+    padding: 0px;
+    border: 2px solid #6878c1;
+}
+
+.product-dis-total .count{
+    margin: 0 6px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.product-name{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.product-dis-total svg {
+    width: 16px;
+    height: 16px;
+}
+
+.product-dis-price-mrp {
+    text-decoration: line-through;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #848484;
+    padding-left: 10px;
+}
+
+.product-off {
+    display: inline-block;
+    font-weight: 800;
+    color: #67ad5b;
+    margin-right: 4px;
+}
+
+.product-name span {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: .24px;
+    color: #848484;
+    margin-left: 10px;
+}
+
+.add-to-cart-button{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.product-logo {
+    color: #fff;
+    text-decoration: none;
+}
+.product-section {
+    height: 100%;
+    position: relative;
+}
+.product-section .add-to-cart-button {
+    display: none;
+    transition: all .5s ease-in;
+}
+
+.product-section.sold-out-wrapper .add-to-cart-button{
+    display: none !important;
+}
+
+.product-section:hover .add-to-cart-button {
+    display: block;
+}
+
+header{
+    background: #396afc;
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+    background: linear-gradient(to right, #2948ff, #396afc);
+}
+
+.add-to-cart-button button {
+    background: #56CCF2;
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+    background: linear-gradient(to right, #2F80ED, #56CCF2);
+    border-radius: 21px;
+    padding: 8px 20px;
+    font-size: 12px;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #f2f2f2;
+}
+
+.product-rating {
+    right: 10px;
+    bottom: 16px;
+    border-radius: 18px;
+    background-color: rgba(255,255,255,.7);
+    position: absolute;
+}
+
+.product-rating span {
+    background: url(https://ii1.pepperfry.com/images/svg/icon-yellow-star-21.svg) no-repeat 86%;
+    display: block;
+    background-size: 13px 12px;
+    padding: 2px 24px 2px 8px;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.product-dis-value {
+    color: #212121;
+    font-weight: 600;
+}
+
+.product-detail-image-section .css-uym98a-MuiImageList-root{
+    width: 100%;
+    height: auto;
+}
+
+.routeLink-custom {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-detail-image-section .mainImage-section {
+    height: 402px;
+    background-color: #ffff;
+}
+
+.product-detail-image-section  .css-pxxd1-MuiImageListItem-root .MuiImageListItem-img {
+    height: 100px;
+    width: 100px;
+}
+.product-detail-image-section img {
+    max-width: 100%;
+}
+
+.product-detail-image-section ul li.css-pxxd1-MuiImageListItem-root{ 
+    align-items: center;
+}
+
+/* Media for tablet and above */
+@media (min-width: 600px) {
+    .main-section {
+        padding-top: 90px;
+        padding-left: 24px;
+        padding-right: 24px;    
+    }
+}
+
+/* Media for mobile  */
+@media (min-width: 0px ) and (max-width: 599px) {
+    .main-section {
+        padding-top: 75px;
+        padding-left: 16px;
+        padding-right: 16px;  
+    }
+}
