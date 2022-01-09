@@ -16,6 +16,8 @@ import Cart from './cart';
 
 import { connect } from 'react-redux';
 import { fetchSearchTerm } from '../actions'
+import HomeIcon from '@mui/icons-material/Home';
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -46,7 +48,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
     width: '100%',
@@ -69,7 +70,7 @@ const Header = (props) => {
             edge="start"
             color="inherit"
             aria-label="open drawer"
-            sx={{ mr: 2 }}
+            sx={{ mr: { xs: 0, sm: 2 } }}
           >
             <MenuIcon />
           </IconButton>
@@ -81,6 +82,22 @@ const Header = (props) => {
           >
            <Link to="/" className="product-logo">PRODUCT</Link>
           </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: 'block', sm: 'none' },mr: { xs: 2, sm: 0 } }}>
+            <Typography
+              noWrap
+              variant="h6"
+              component="div"
+            >
+            <Link to="/" className="product-logo">
+              <IconButton
+                  size="large"
+                  color="inherit"
+                >
+                  <HomeIcon />
+                </IconButton>
+            </Link>
+            </Typography>
+          </Box>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />

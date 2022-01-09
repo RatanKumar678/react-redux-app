@@ -13,6 +13,23 @@
 .product-dis {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.vip-eff-price-disc{
+    font-size: .75rem;
+    color: #67ad5b;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.price-tag {
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    color: #fff !important;
+    font-size: 1.06rem !important;
 }
 
 .product-dis-key{
@@ -213,6 +230,10 @@ header{
     align-items: center;
 }
 
+.detail-box{
+    width: '80%'
+}
+
 /* Media for tablet and above */
 @media (min-width: 600px) {
     .main-section {
@@ -228,5 +249,13 @@ header{
         padding-top: 75px;
         padding-left: 16px;
         padding-right: 16px;  
+    }
+
+    .detail-box{
+        width: '100%'
+    }
+
+    .detail-box-Typography {
+        font-size: 1.375rem !important;
     }
 }

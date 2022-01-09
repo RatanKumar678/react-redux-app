@@ -18,8 +18,7 @@ class ProductList extends Component {
       return this.props.products;
     } else {
       return (
-        this.props.products.filter(ele => { 
-          debugger
+        this.props.products.filter(ele => {
           const currentItem = ele.title.toLocaleLowerCase();
           const searchTerm = this.props.term.toLocaleLowerCase();
           return currentItem.includes(searchTerm);

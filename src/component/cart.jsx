@@ -28,7 +28,7 @@ const Cart = ({items = []}) => {
         });
 
         uniqueArray.forEach(item => {
-           delete item?.count;
+            delete item?.count;
             items.forEach(innerItem => {
                 if(item.id === innerItem.id) {
                     if (item['count']) {
@@ -37,8 +37,8 @@ const Cart = ({items = []}) => {
                         item['count'] = 1;
                     };
                 }
-            })
-        })
+            });
+        });
 
         setCartUniqueItem(uniqueArray);
     },[items]);
