@@ -1,3 +1,10 @@
+## About Me
+- 👋 Hi, I’m @RatanKumar678
+- 👀 I’m interested in web Development and Agnular Framework.
+- 🌱 I’m currently learning React And Vue JS
+- 💞️ I’m looking to collaborate on Angular.
+- 📫 How to reach me https://www.linkedin.com/in/ratan-kumar-rebari/
+
 # react-redux-app
 
 ## Steps to start App
