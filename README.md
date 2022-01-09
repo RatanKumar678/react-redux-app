@@ -1,8 +1,8 @@
 ## About Me
 - 👋 Hi, I’m @RatanKumar678
-- 👀 I’m interested in web Development and Agnular Framework.
-- 🌱 I’m currently learning React And Vue JS
-- 💞️ I’m looking to collaborate on Angular.
+- 👀 I’m Front End Developer 
+- 🌱 I’m currently working with Globant Inc (Exp: 6 years into UI)
+- 💞️ I’m looking to collaborate on Angular/React.
 - 📫 How to reach me https://www.linkedin.com/in/ratan-kumar-rebari/
 
 # react-redux-app
